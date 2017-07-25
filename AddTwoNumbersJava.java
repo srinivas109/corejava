@@ -9,11 +9,7 @@ public class AddTwoNumbersJava {
 		System.out.println(" Sum of 0 + 200 is : " + add(0, 200));
 	}
 
-	/**
-	 * Adding two number without using + or plus arithmetic operator using *
-	 * recursion in Java. This method uses XOR and AND bitwise operator to *
-	 * calculate sum of two numbers;
-	 */
+	
 	public static int add(int a, int b) {
 		if (b == 0)
 			return a;
@@ -22,11 +18,7 @@ public class AddTwoNumbersJava {
 		return add(sum, carry);
 	}
 
-	/**
-	 * Adding two integers without any arithmetic operator and using recursion.
-	 * * This solution also uses XOR and AND bitwise and << left shift bitshift
-	 * * operator
-	 */
+	
 	public static int addIterative(int a, int b) {
 		while (b != 0) {
 			int carry = (a & b); // CARRY is AND of two bits
